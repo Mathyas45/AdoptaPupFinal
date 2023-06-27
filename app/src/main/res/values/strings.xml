@@ -9,10 +9,16 @@
     <string name="Registro">Crear Cuenta</string>
     <string name="votar">Votar</string>
     <string name="razas">Razas</string>
-    <string name="imagenes">Imagenes</string>
-    <string name="faoritos">Favoritos</string>
+    <string name="Imagen">Imagen</string>
+    <string name="Favorito">Favorito</string>
+    <string name="Ranking">Ranking</string>
     <string name="popularidad">Populares</string>
     <string name="login">Iniciar Sesión</string>
+    <string name="continuarButton">CONTINUAR</string>
+    <string name="yatienescuent">¿Ya tienes cuenta?</string>
+    <string name="crearcuenta">Crear Cuenta nueva</string>
+    <string name="Ingresarmensaje">Igrese el mensaje</string>
+
 
 
 </resources>

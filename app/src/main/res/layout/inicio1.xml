@@ -36,7 +36,7 @@
         android:background="@drawable/degradado_boton"
         android:padding="5dp"
         android:layout_marginLeft="45dp"
-        android:text="CONTINUAR"
+        android:text="@string/continuarButton"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 

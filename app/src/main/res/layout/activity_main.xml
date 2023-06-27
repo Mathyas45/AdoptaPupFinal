@@ -78,6 +78,7 @@
                 android:id="@+id/button_dislike"
                 android:layout_width="68dp"
                 android:layout_height="56dp"
+                android:rotation="180"
                 android:layout_marginTop="12dp"
                 android:src="@drawable/like" />
 
@@ -99,8 +100,8 @@
 
             <ImageView
                 android:id="@+id/button_like"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="68dp"
+                android:layout_height="56dp"
                 android:layout_marginTop="12dp"
                 android:src="@drawable/like" />
 
