@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="376dp"
+        android:layout_height="311dp" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/coloredittext"
+        android:hint="@string/Nombre"
+        android:textColorHint="@color/Negrorojiso"
+        android:textColor="@color/Negrorojiso" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/coloredittext"
+        android:hint="@string/Apellidos"
+        android:textColorHint="@color/Negrorojiso"
+        android:textColor="@color/Negrorojiso" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/coloredittext"
+        android:hint="@string/Correo"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/Negrorojiso"
+        android:textColor="@color/Negrorojiso" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/coloredittext"
+        android:hint="@string/Comtraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/Negrorojiso"
+        android:textColor="@color/Negrorojiso" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Masculino"
+            android:layout_marginRight="50dp"
+            android:button="@drawable/radio_button_custom"
+            android:textColorHint="@color/Negrorojiso"
+            android:textColor="@color/Negrorojiso" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Femenino"
+            android:button="@drawable/radio_button_custom"
+            android:textColorHint="@color/Negrorojiso"
+            android:textColor="@color/Negrorojiso" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Registro"
+        android:background="@drawable/colorbutton" />
+
+</LinearLayout>
+

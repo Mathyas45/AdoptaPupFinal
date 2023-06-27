@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Raza">
+
+    <!-- Barra superior roja -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:gravity="center_vertical">
+
+        <!-- Botón de 3 puntitos -->
+        <ImageButton
+            android:id="@+id/buttonOptions"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_options"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <!-- Cuerpo -->
+    <FrameLayout
+        android:id="@+id/bodyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/topBar">
+
+        <!-- Contenido del cuerpo -->
+
+    </FrameLayout>
+
+    <!-- Menú inferior -->
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ECECEC"
+        android:padding="10dp">
+
+        <!-- Botones del menú -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Botón 1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Botón 2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Botón 3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Botón 4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Botón 5" />
+
+    </LinearLayout>
+
+</RelativeLayout>
