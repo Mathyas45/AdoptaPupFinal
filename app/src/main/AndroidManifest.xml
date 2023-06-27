@@ -13,6 +13,15 @@
         android:theme="@style/Theme.AdoptaPupFinal"
         tools:targetApi="31">
         <activity
+            android:name=".Imagenes"
+            android:exported="false" />
+        <activity
+            android:name=".Favoritos"
+            android:exported="false" />
+        <activity
+            android:name=".Popularidad"
+            android:exported="false" />
+        <activity
             android:name=".Raza"
             android:exported="false" />
         <activity
@@ -26,7 +35,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
