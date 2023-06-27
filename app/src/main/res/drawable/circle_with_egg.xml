@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <path
+        android:pathData="M50,0
+            a50,50 0 1,0 0.1,0
+            a50,50 0 1,0 -0.1,0Z
+            M50,25
+            a25,25 0 1,0 0.1,0
+            a25,25 0 1,0 -0.1,0Z"
+        android:fillColor="#00000000" /> <!-- Fondo transparente -->
+
+    <path
+        android:pathData="M50,50
+            m0,-35
+            a35,35 0 1,0 0.1,0
+            a35,35 0 1,0 -0.1,0Z"
+        android:fillColor="#FFF"
+        android:strokeColor="#000"
+        android:strokeWidth="1" />
+
+    <path
+        android:pathData="M50,50
+            m0,-15
+            a15,15 0 1,0 0.1,0
+            a15,15 0 1,0 -0.1,0Z"
+        android:fillColor="#FFF" />
+
+</vector>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+
+    >
+
+    <!-- Logo circular -->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+  android:layout_marginBottom="65dp"
+        android:src="@drawable/logoAdoptapup" />
+
+    <!-- Campo de usuario -->
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/user"
+
+
+        android:inputType="text" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/password"
+
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
+        />
+
+    <!-- Botón de login -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@drawable/degradado_boton"
+        android:textSize="25dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <!-- Texto de enlace -->
+    <TextView
+        android:id="@+id/text_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="¿Crear nueva cuenta?"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

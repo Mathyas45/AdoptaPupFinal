@@ -2,11 +2,16 @@
     <string name="app_name">AdoptaPupFinal</string>
     <string name="Nombre">Nombre</string>
     <string name="Apellidos">Apellido</string>
-    <string name="Correo">Correo Electronico</string>
+    <string name="Correo">Usuario</string>
     <string name="Comtraseña">Contraseña</string>
     <string name="Masculino">Masculino</string>
     <string name="Femenino">Femenino</string>
-    <string name="Registro">Registrar</string>
+    <string name="Registro">Crear Cuenta</string>
+    <string name="votar">Votar</string>
+    <string name="razas">Razas</string>
+    <string name="imagenes">Imagenes</string>
+    <string name="faoritos">Favoritos</string>
+    <string name="popularidad">Populares</string>
 
 
 </resources>
