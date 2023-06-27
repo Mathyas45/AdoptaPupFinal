@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18dp"
-        android:text="¿Crear nueva cuenta?"
+        android:text="@string/crearcuenta"
         android:textColor="@color/Negrorojiso"
         android:layout_gravity="center_horizontal"
         android:textStyle="italic"
