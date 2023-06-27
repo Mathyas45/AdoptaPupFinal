@@ -38,6 +38,6 @@
         android:layout_marginLeft="45dp"
         android:text="CONTINUAR"
         android:textColor="#FFFFFF"
-        android:textSize="35sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>
