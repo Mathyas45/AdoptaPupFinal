@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
+    android:background="@color/white"
 
     >
 
@@ -20,32 +21,34 @@
     <EditText
         android:id="@+id/edit_username"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:layout_height="40dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/coloredittext"
         android:drawableStart="@drawable/user"
-
-
-        android:inputType="text" />
+        android:hint="@string/Correo"
+        android:inputType="text"
+        android:textColor="@color/Negrorojiso"
+        android:textColorHint="@color/Negrorojiso" />
 
     <!-- Campo de contraseña -->
     <EditText
         android:id="@+id/edit_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/password"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/coloredittext"
+        android:hint="@string/Comtraseña"
 
-        android:hint="Contraseña"
         android:inputType="textPassword"
-        android:layout_marginBottom="40dp"
-        />
+        android:textColor="@color/Negrorojiso"
+        android:textColorHint="@color/Negrorojiso" />
 
     <!-- Botón de login -->
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:background="@drawable/degradado_boton"
         android:textSize="25dp"
         android:padding="15dp"
@@ -60,7 +63,7 @@
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:text="¿Crear nueva cuenta?"
-        android:textColor="@color/black"
+        android:textColor="@color/Negrorojiso"
         android:layout_gravity="center_horizontal"
         android:textStyle="italic"
         android:layout_marginTop="16dp" />

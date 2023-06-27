@@ -11,7 +11,8 @@
 
     <ImageView
         android:layout_width="360dp"
-        android:layout_height="311dp" />
+        android:layout_height="311dp"
+        android:src="@drawable/img_base"/>
     <EditText
         android:id="@+id/editTextFirstName"
         android:layout_width="match_parent"
@@ -54,8 +55,6 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/coloredittext"
         android:hint="@string/Comtraseña"
-        android:drawableStart="@drawable/password"
-
         android:inputType="textPassword"
         android:textColorHint="@color/Negrorojiso"
         android:textColor="@color/Negrorojiso" />
@@ -95,6 +94,16 @@
         android:layout_height="wrap_content"
         android:text="@string/Registro"
         android:background="@drawable/colorbutton" />
+    <TextView
+        android:id="@+id/text_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="¿Ya tienes cuenta?"
+        android:textColor="@color/Negrorojiso"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
 

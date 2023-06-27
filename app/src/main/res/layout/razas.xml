@@ -1,14 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Favoritos">
 
-    <!-- Spinner de las razas de perros -->
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#CC0026">
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
 
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/buttonOptions"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_options" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/spinner_dog_breeds"
@@ -18,26 +37,22 @@
         android:layout_marginTop="39dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="39dp"
-        android:prompt="@string/razas" />
-
+        android:prompt="@string/razas"
+        />
 
     <!-- Foto mediana -->
     <ImageView
         android:id="@+id/image_dog"
         android:layout_width="330dp"
         android:layout_height="380dp"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/img_base" />
-
-    <!-- Rectángulo plomo con texto -->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/image_dog"
         android:layout_margin="16dp"
-        android:layout_marginTop="-32dp"
-        android:layout_marginBottom="16dp"
         android:background="#D9D9D9"
         android:padding="16dp">
 
@@ -52,75 +67,133 @@
     <LinearLayout
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:background="#ECECEC"
+        android:layout_height="94dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/lineinferior"
         android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="@color/white">
+        android:padding="10dp">
 
         <!-- Botones del menú -->
-        <TextView
-            android:id="@+id/button1"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@drawable/votar"
-            android:textColor="@color/RojoOscuro"
-            android:textSize="19sp"
-            android:textAlignment="center"
-            android:text="@string/votar" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-        <TextView
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@color/black"
-            android:textSize="19sp"
-            android:textAlignment="center"
-            android:background="@color/white"
-            android:drawableTop="@drawable/icono_razasN"
-            android:text="@string/razas" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/voteblack" />
 
-        <TextView
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textAlignment="center"
-            android:background="@color/white"
-            android:drawableTop="@drawable/icono_imagenes"
-            android:text="@string/imagenes" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Votar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:background="@color/white"
-            android:drawableTop="@drawable/icono_favN"
-            android:text="@string/faoritos" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/button5"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="17sp"
-            android:drawableTop="@drawable/icono_rankN"
-            android:text="@string/popularidad" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/razablack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raza"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imagenblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imagen"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/favoritosblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorito"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/uploadBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ranking"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

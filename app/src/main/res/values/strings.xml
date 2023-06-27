@@ -12,6 +12,7 @@
     <string name="imagenes">Imagenes</string>
     <string name="faoritos">Favoritos</string>
     <string name="popularidad">Populares</string>
+    <string name="login">Iniciar Sesión</string>
 
 
 </resources>
