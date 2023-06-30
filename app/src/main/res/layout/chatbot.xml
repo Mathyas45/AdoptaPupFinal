@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".ChatBot">
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        android:background="@color/Rojo"
+        android:background="@android:color/white"
         android:elevation="4dp"
-        app:titleTextColor="@color/white"
         android:gravity="center|center_vertical"
-        app:title="                    Chatbot adoptaPup"
+        app:titleTextColor="@color/RojoOscuro"
+        app:title="                  Chatbot AdoptaPup"
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -38,10 +38,11 @@
             android:id="@+id/message_text_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_marginEnd="10dp"
             android:layout_toStartOf="@+id/send_btn"
             android:background="@drawable/edit_text_bg"
-            android:hint="Ingresar mensaje"
+            android:hint="Type your message"
             android:padding="10dp"
             android:textColor="@android:color/black" />
 

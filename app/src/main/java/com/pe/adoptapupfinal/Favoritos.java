@@ -36,7 +36,7 @@ public class Favoritos extends AppCompatActivity {
 
     }
     public void raking(View view) {
-        Intent intent = new Intent(this, Popularidad.class);
+        Intent intent = new Intent(this, ChatBot.class);
         startActivity(intent);
 
     }

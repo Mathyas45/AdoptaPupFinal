@@ -246,8 +246,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="5dp"
-            android:onClick="raking"
-            android:id="@+id/Raking">
+            android:onClick="ChatBot"
+            android:id="@+id/ChatBot">
 
             <ImageView
                 android:layout_width="40dp"
@@ -258,7 +258,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ranking"
+                android:text="ChatBot"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
