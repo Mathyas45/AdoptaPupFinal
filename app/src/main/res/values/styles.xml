@@ -1,0 +1,7 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Personaliza los atributos del tema principal si es necesario -->
+    </style>
+
+
+</resources>
