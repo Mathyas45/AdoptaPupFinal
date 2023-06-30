@@ -15,7 +15,8 @@
         android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
   android:layout_marginBottom="65dp"
-        android:src="@drawable/logoAdoptapup" />
+        android:src="@drawable/logo"
+        />
 
     <!-- Campo de usuario -->
     <EditText
@@ -53,6 +54,7 @@
         android:textSize="25dp"
         android:padding="15dp"
         android:layout_marginBottom="20dp"
+        android:onClick="Inicio"
 
         />
 
@@ -62,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18dp"
-        android:text="@string/crearcuenta"
+        android:text="Crear Cuenta"
         android:textColor="@color/Negrorojiso"
         android:layout_gravity="center_horizontal"
         android:textStyle="italic"

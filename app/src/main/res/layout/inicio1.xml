@@ -38,6 +38,9 @@
         android:layout_marginLeft="45dp"
         android:text="@string/continuarButton"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="continuar"
+        />
+
 
 </RelativeLayout>

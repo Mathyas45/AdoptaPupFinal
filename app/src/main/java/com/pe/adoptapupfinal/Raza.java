@@ -7,29 +7,31 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class Imagenes extends AppCompatActivity {
-    LinearLayout votar,raza,imagen,favorito,ranking;
+public class Raza extends AppCompatActivity {
+    LinearLayout votar,imagen,favorito,ranking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_imagenes);
+        setContentView(R.layout.razas);
         votar = findViewById(R.id.Votar);
-        raza = findViewById(R.id.Raza);
+
+        imagen = findViewById(R.id.Imagen);
         favorito = findViewById(R.id.Favorito);
         ranking = findViewById(R.id.Raking);
     }
 
+    public void imagen(View view) {
+        Intent intent = new Intent(this, Imagenes.class);
+        startActivity(intent);
+
+    }
     public void votar(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
     }
-    public void raza(View view) {
-        Intent intent = new Intent(this,Raza.class);
-        startActivity(intent);
 
-    }
     public void favorito(View view) {
         Intent intent = new Intent(this, Favoritos.class);
         startActivity(intent);
@@ -40,4 +42,5 @@ public class Imagenes extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 }

@@ -24,7 +24,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_options" />
+            />
 
         </LinearLayout>
 
@@ -68,12 +68,14 @@
 
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewItems"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
+        <ImageView
+            android:id="@+id/image_photo"
+            android:layout_width="359dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/perros" />
+
 
     </LinearLayout>
 
@@ -84,16 +86,18 @@
         android:layout_gravity="bottom"
         android:background="@drawable/lineinferior"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        >
 
-        <!-- Botones del menú -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:onClick="votar"
+            android:padding="5dp"
+            android:id="@+id/Votar">
 
             <ImageView
                 android:layout_width="40dp"
@@ -111,13 +115,16 @@
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="raza"
+            android:id="@+id/Raza">
 
             <ImageView
                 android:layout_width="50dp"
@@ -141,7 +148,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="imagen"
+            android:id="@+id/Imagen">
 
             <ImageView
                 android:layout_width="40dp"
@@ -165,7 +174,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="favorito"
+            android:id="@+id/Favorito">
 
             <ImageView
                 android:layout_width="40dp"
@@ -179,7 +190,8 @@
                 android:text="Favorito"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:id="@+id/Favoritos"/>
 
         </LinearLayout>
 
@@ -189,13 +201,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="raking"
+            android:id="@+id/Raking">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/uploadBlack" />
+                android:src="@drawable/uploadblack" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -204,9 +218,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
-
         </LinearLayout>
-
 
     </LinearLayout>
 </LinearLayout>

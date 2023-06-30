@@ -27,7 +27,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_options" />
+                />
 
         </LinearLayout>
 
@@ -96,7 +96,7 @@
         android:background="@drawable/lineinferior"
         android:orientation="horizontal"
         android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        >
 
         <LinearLayout
             android:layout_width="0dp"
@@ -104,7 +104,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:onClick="votar"
+            android:padding="5dp"
+            android:id="@+id/Votar">
 
             <ImageView
                 android:layout_width="40dp"
@@ -129,7 +131,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="raza"
+            android:id="@+id/Raza">
 
             <ImageView
                 android:layout_width="50dp"
@@ -153,7 +157,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="imagen"
+            android:id="@+id/Imagen">
 
             <ImageView
                 android:layout_width="40dp"
@@ -177,7 +183,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="favorito"
+            android:id="@+id/Favorito">
 
             <ImageView
                 android:layout_width="40dp"
@@ -191,7 +199,8 @@
                 android:text="Favorito"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:id="@+id/Favoritos"/>
 
         </LinearLayout>
 
@@ -201,13 +210,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:onClick="raking"
+            android:id="@+id/Raking">
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/uploadBlack" />
+                android:src="@drawable/uploadblack" />
 
             <TextView
                 android:layout_width="wrap_content"
