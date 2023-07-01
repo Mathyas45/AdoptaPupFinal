@@ -6,7 +6,7 @@
     </style>
 
 <!--    <style name="Theme.AdoptaPupFinal" parent="Base.Theme.AdoptaPupFinal" />-->
-    <style name="Theme.AdoptaPupFinal" parent="Theme.MaterialComponents.Light">
+    <style name="Theme.AdoptaPupFinal" parent="Theme.AppCompat.NoActionBar">
         <!-- Otros atributos de estilo -->
     </style>
 
