@@ -48,14 +48,6 @@ public class MainActivity extends AppCompatActivity {
         ImageView buttonDislike = findViewById(R.id.button_dislike);
         ImageView buttonLike = findViewById(R.id.button_like);
 
-//        // Inicializar el Handler y el Runnable
-//                handler = new Handler();
-//                ratingRunnable = this::showRatingDialog;
-//
-//                // Programar la ejecución del Runnable cada 2 minutos
-//                handler.postDelayed(ratingRunnable, TimeUnit.MINUTES.toMillis(2));
-
-        // Carga una imagen al azar desde la API de Cat API
         loadRandomImage();
 
         buttonDislike.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +71,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Imagenes.class);
             startActivity(intent);
 
-        }
+        }public void favorito(View view) {
+        Intent intent = new Intent(this, Favoritos.class);
+        startActivity(intent);
+
+    }
         public void votar(View view) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
