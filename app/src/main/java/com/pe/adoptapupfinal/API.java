@@ -1,7 +1,8 @@
 package com.pe.adoptapupfinal;
 public class API {
-    public static String API_URL ="https://api.thecatapi.com/v1/images/search?breed_ids=beng&include_breeds=true&limit=10" ;
-
+    public static String[] API_URLS = {
+            "https://api.thedogapi.com/v1/images/search",
+            "https://api.thedogapi.com/v1/favourites"
     };
 
-
+}
